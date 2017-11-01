@@ -1,0 +1,11 @@
+{
+  "name": "streetart_public",
+  "description": "Application to manage artists directory",
+  "authors": [
+    "Ozlem Kuscu"
+  ],
+  "private": true,
+  "dependencies": {
+    "core": "https://github.com/CityofToronto/corejs.git#3.x.x"
+  }
+}
