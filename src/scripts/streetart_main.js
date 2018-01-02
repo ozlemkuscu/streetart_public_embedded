@@ -12,6 +12,7 @@ let fid = null;
 
 $(function () {
   httpHost = '/* @echo ENV*/';
+  //httpHost = 'prod';
 
   let cotApp = new CotApp();
 

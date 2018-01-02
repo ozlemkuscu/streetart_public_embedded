@@ -31,7 +31,7 @@ streetartForm = CotView.extend({
         let keepQueryString = checkFileUploads(uploads);
 
         $.ajax({
-          "url": config.httpHost.app_public[httpHost] + config.api_public.post + repo + '?sid=' + keepQueryString,
+          "url": config.httpHost.app_public[httpHost] + config.api_public.post + repo + '?' + keepQueryString,
           type: 'POST',
           "data": JSON.stringify(payload),
           "headers": {
@@ -385,7 +385,7 @@ function checkFileUploads(uploads) {
     })
   }
 
-  if (binLoc != "") { queryString = "&keepFiles=" + binLoc };
+  if (binLoc != "") { queryString = "keepFiles=" + binLoc };
 
   return queryString;
 }
